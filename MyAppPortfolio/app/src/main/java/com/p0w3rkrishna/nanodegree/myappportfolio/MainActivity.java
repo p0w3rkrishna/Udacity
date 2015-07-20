@@ -11,7 +11,13 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * <h1>Udacity - Android Developer Nanodegree</h1>
+ * Project 0: My App Portfolio
+ * @author  André Galrito
+ * @version 1.0
+ * @since   2015.07.20
+ */
 public class MainActivity extends ActionBarActivity
 {
     private static final String TXT_GENERAL  = "This button will launch: ";
@@ -33,8 +39,13 @@ public class MainActivity extends ActionBarActivity
         initButtons();
     }
 
+    /**
+     * Creates a Map that holds the relationship between the buttons and their respective to show
+     * texts and sets a mouse click listener for each one of them
+     */
     private void initButtons()
     {
+        //Map - key: button, value: text to show when button is pressed
         buttons.put(findViewById(R.id.button01), TXT_BUTTON01);
         buttons.put(findViewById(R.id.button02), TXT_BUTTON02);
         buttons.put(findViewById(R.id.button03), TXT_BUTTON03);
